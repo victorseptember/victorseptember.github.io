@@ -15,13 +15,10 @@
 <meta property="og:site_name" content="小佐&#39;s blog">
 <meta property="og:description" content="概述Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。Markdown的目标就是实现易读易写，成为一种适用于网络的书写语言。它同样兼容HTML，不在Markdown涵盖范围之内的标签，都可以直接在文档中用HTML来编写，并不需标注这是Markdown或是HTML，直接添加标签即可。然而请注意，在HTML区块标签间Markdown语法">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2019/02/25/Markdown语法快速入门/images/QQ截图20190225192731_1.png">
-<meta property="og:image" content="http://i1.bvimg.com/678380/6fb65d6feb08b0b8.png">
-<meta property="og:updated_time" content="2019-02-25T12:12:28.527Z">
+<meta property="og:updated_time" content="2019-02-26T14:02:51.889Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Markdown语法快速入门">
 <meta name="twitter:description" content="概述Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。Markdown的目标就是实现易读易写，成为一种适用于网络的书写语言。它同样兼容HTML，不在Markdown涵盖范围之内的标签，都可以直接在文档中用HTML来编写，并不需标注这是Markdown或是HTML，直接添加标签即可。然而请注意，在HTML区块标签间Markdown语法">
-<meta name="twitter:image" content="http://yoursite.com/2019/02/25/Markdown语法快速入门/images/QQ截图20190225192731_1.png">
   
     <link rel="alternate" href="/atom.xml" title="小佐&#39;s blog" type="application/atom+xml">
   
@@ -96,12 +93,67 @@
       
         <h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。Markdown的目标就是实现<strong>易读易写</strong>，成为一种适用于网络的书写语言。它同样兼容HTML，不在Markdown涵盖范围之内的标签，都可以直接在文档中用HTML来编写，并不需标注这是Markdown或是HTML，直接添加标签即可。然而请注意，在HTML区块标签间Markdown语法不会被处理。</p>
 <hr>
-<p><img src="./images/QQ截图20190225192731_1.png" alt="enter description here" title="QQ截图20190225192731"><br><img src="http://i1.bvimg.com/678380/6fb65d6feb08b0b8.png" alt="Markdown"></p>
+<h4 id="段落、标题、区块代码"><a href="#段落、标题、区块代码" class="headerlink" title="段落、标题、区块代码"></a>段落、标题、区块代码</h4><p>一个段落是由一个以上的连接的行句组成，而一个以上的空行则会划分出不同的段落 <em>(空行的定义是显示上看起来像是空行，就被视为空行，例如有一行只有空白和 tab，那该行也会被视为空行)</em>，一般的段落不需要用空白或换行缩进。</p>
+<p>Markdown 支持两种标题的语法，Setext 和 atx 形式。Setext 形式是用底线的形式，利用 <strong>=</strong> （最高阶标题）和 <strong>-</strong> （第二阶标题），Atx 形式在行首插入 1 到 6 个 <strong>#</strong> ，对应到标题 1 到 6 阶。</p>
+<p>区块引用则使用 email 形式的 ‘<strong>&gt;</strong>‘ 角括号。</p>
+<p>Markdown语法:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">A First Level Header</span><br><span class="line">====================</span><br><span class="line">A Second Level Header</span><br><span class="line">---------------------</span><br><span class="line"></span><br><span class="line">Now is the time for all good men to come to</span><br><span class="line">the aid of their country. This is just a</span><br><span class="line">regular paragraph.</span><br><span class="line"></span><br><span class="line">The quick brown fox jumped over the lazy</span><br><span class="line">dog&apos;s back.</span><br><span class="line">### Header 3</span><br><span class="line"></span><br><span class="line">&gt; This is a blockquote.</span><br><span class="line">&gt; </span><br><span class="line">&gt; This is the second paragraph in the blockquote.</span><br><span class="line">&gt;</span><br><span class="line">&gt; ## This is an H2 in a blockquote</span><br></pre></td></tr></table></figure></p>
+<p>输出为HTML：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Some of these words &lt;em&gt;are emphasized&lt;/em&gt;.</span><br><span class="line">Some of these words &lt;em&gt;are emphasized also&lt;/em&gt;.&lt;/p&gt;</span><br><span class="line">&lt;p&gt;Use two asterisks for &lt;strong&gt;strong emphasis&lt;/strong&gt;.</span><br><span class="line">Or, if you prefer, &lt;strong&gt;use two underscores instead&lt;/strong&gt;.&lt;/p&gt;</span><br></pre></td></tr></table></figure></p>
+<p>显示效果为：</p>
+<h1 id="A-First-Level-Header"><a href="#A-First-Level-Header" class="headerlink" title="A First Level Header"></a>A First Level Header</h1><h2 id="A-Second-Level-Header"><a href="#A-Second-Level-Header" class="headerlink" title="A Second Level Header"></a>A Second Level Header</h2><p>Now is the time for all good men to come to<br>the aid of their country. This is just a<br>regular paragraph.</p>
+<p>The quick brown fox jumped over the lazy<br>dog’s back.</p>
+<h3 id="Header-3"><a href="#Header-3" class="headerlink" title="Header 3"></a>Header 3</h3><blockquote>
+<p>This is a blockquote.</p>
+<p>This is the second paragraph in the blockquote.</p>
+<h2 id="This-is-an-H2-in-a-blockquote"><a href="#This-is-an-H2-in-a-blockquote" class="headerlink" title="This is an H2 in a blockquote"></a>This is an H2 in a blockquote</h2></blockquote>
+<hr>
+<h4 id="修辞和强调"><a href="#修辞和强调" class="headerlink" title="修辞和强调"></a>修辞和强调</h4><p>Markdown 使用星号和底线来标记需要强调的区段。</p>
+<p>Markdown语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Some of these words *are emphasized*.</span><br><span class="line">Some of these words _are emphasized also_.</span><br><span class="line">Use two asterisks for **strong emphasis**.</span><br><span class="line">Or, if you prefer, __use two underscores instead__.</span><br></pre></td></tr></table></figure></p>
+<p>输出HTML为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Some of these words &lt;em&gt;are emphasized&lt;/em&gt;.</span><br><span class="line">Some of these words &lt;em&gt;are emphasized also&lt;/em&gt;.&lt;/p&gt;</span><br><span class="line">&lt;p&gt;Use two asterisks for &lt;strong&gt;strong emphasis&lt;/strong&gt;.</span><br><span class="line">Or, if you prefer, &lt;strong&gt;use two underscores instead&lt;/strong&gt;.&lt;/p&gt;</span><br></pre></td></tr></table></figure></p>
+<p>显示效果为：</p>
+<p>Some of these words <em>are emphasized</em>.<br>Some of these words <em>are emphasized also</em>.</p><br><p>Use two asterisks for <strong>strong emphasis</strong>.<br>Or, if you prefer, <strong>use two underscores instead</strong>.</p>
+
+<hr>
+<h4 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h4><p>无序列表使用星号、加号和减号来做为列表的项目标记，这些符号是都可以使用的，使用星号：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">* Candy.</span><br><span class="line">* Gum.</span><br><span class="line">* Booze</span><br></pre></td></tr></table></figure></p>
+<p>加号：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">+ Candy.</span><br><span class="line">+ Gum.</span><br><span class="line">+ Booze</span><br></pre></td></tr></table></figure></p>
+<p>减号：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- Candy.</span><br><span class="line">- Gum.</span><br><span class="line">- Booze</span><br></pre></td></tr></table></figure></p>
+<p>都会输出HTML为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul&gt;</span><br><span class="line">&lt;li&gt;Candy.&lt;/li&gt;</span><br><span class="line">&lt;li&gt;Gum.&lt;/li&gt;</span><br><span class="line">&lt;li&gt;Booze.&lt;/li&gt;</span><br></pre></td></tr></table></figure></p>
+<p>有序列表则是使用一般的数字接着一个英文句点作为项目标记：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. Red</span><br><span class="line">2. Green</span><br><span class="line">3. Blue</span><br></pre></td></tr></table></figure></p>
+<p>输出HTML为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;ol&gt;</span><br><span class="line">&lt;li&gt;Red&lt;/li&gt;</span><br><span class="line">&lt;li&gt;Green&lt;/li&gt;</span><br><span class="line">&lt;li&gt;Blue&lt;/li&gt;</span><br><span class="line">&lt;/ol&gt;</span><br></pre></td></tr></table></figure></p>
+<hr>
+<h4 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h4><p>Markdown 支援两种形式的链接语法： 行内 和 参考 两种形式，两种都是使用角括号来把文字转成连结。</p>
+<ol>
+<li>行内式是直接在后面括号里直接接上链接：<br><code>This is an [example link](http://example.com/).</code><br>你也可以选择性的加上title属性：<br><code>This is an [example link](http://example.com/ &quot;With a Title&quot;).</code></li>
+</ol>
+<p>效果展示：<br>This is an <a href="http://example.com/" title="With a Title" target="_blank" rel="noopener">example link</a>.</p>
+<ol start="2">
+<li>参考形式的链接让你可以为链接定一个名称，之后你可以在文件的其他地方定义该链接的内容：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">I get 10 times more traffic from [Google][1] than from</span><br><span class="line">[Yahoo][2] or [MSN][3].</span><br><span class="line"></span><br><span class="line">[1]: http://google.com/ &quot;Google&quot;</span><br><span class="line">[2]: http://search.yahoo.com/ &quot;Yahoo Search&quot;</span><br><span class="line">[3]: http://search.msn.com/ &quot;MSN Search&quot;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>效果展示：<br>I get 10 times more traffic from <a href="http://google.com/" title="Google" target="_blank" rel="noopener">Google</a> than from<br><a href="http://search.yahoo.com/" title="Yahoo Search" target="_blank" rel="noopener">Yahoo</a> or <a href="http://search.msn.com/" title="MSN Search" target="_blank" rel="noopener">MSN</a>.</p>
+<p>title属性是选择性的，链接名称可以用字母，数字和空格，但是不区分大小写。</p>
+<hr>
+<h4 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h4><p>图片的语法与链接很像。</p>
+<ol>
+<li>行内形式(title是可选择的):<br><code>![alt text](/path/to/img.jpg &quot;Title&quot;)</code></li>
+<li>参考形式:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">![alt text][id]</span><br><span class="line">[id]: /path/to/img.jpg &quot;Title&quot;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>上面两种方法都会输出 HTML 为：<br><code>&lt;img src=&quot;/path/to/img.jpg&quot; alt=&quot;alt text&quot; title=&quot;Title&quot; /&gt;</code></p>
+<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><p>在一般的段落文字中，你可以使用反引号 ` 来标记代码区段，区段内的 &amp;、&lt; 和 &gt; 都会被自动的转换成 HTML 实体，这项特性让你可以很容易的在代码区段内插入 HTML 码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">I strongly recommend against using any `&lt;blink&gt;` tags.</span><br><span class="line"></span><br><span class="line">I wish SmartyPants used named entities like `&amp;mdash;`</span><br><span class="line">instead of decimal-encoded entites like `&amp;#8212;`.</span><br></pre></td></tr></table></figure></p>
+<p>输出 HTML 为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;I strongly recommend against using any</span><br><span class="line">&lt;code&gt;&amp;lt;blink&amp;gt;&lt;/code&gt; tags.&lt;/p&gt;</span><br><span class="line">&lt;p&gt;I wish SmartyPants used named entities like</span><br><span class="line">&lt;code&gt;&amp;amp;mdash;&lt;/code&gt; instead of decimal-encoded</span><br><span class="line">entites like &lt;code&gt;&amp;amp;#8212;&lt;/code&gt;.&lt;/p&gt;</span><br></pre></td></tr></table></figure></p>
+<p>如果要建立一个已经格式化好的代码区块，只要每行都缩进 4 个空格或是一个 tab 就可以了，而 &amp;、&lt; 和 &gt; 也一样会自动转成 HTML 实体。</p>
+<p>Markdown 语法:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">If you want your page to validate under XHTML 1.0 Strict,</span><br><span class="line">you&apos;ve got to put paragraph tags in your blockquotes:</span><br><span class="line"></span><br><span class="line">&lt;blockquote&gt;</span><br><span class="line">&lt;p&gt;For example.&lt;/p&gt;</span><br><span class="line">&lt;/blockquote&gt;</span><br></pre></td></tr></table></figure></p>
+<p>输出 HTML 为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;If you want your page to validate under XHTML 1.0 Strict,</span><br><span class="line">you&apos;ve got to put paragraph tags in your blockquotes:&lt;/p&gt;</span><br><span class="line">&lt;pre&gt;&lt;code&gt;&amp;lt;blockquote&amp;gt;</span><br><span class="line">&amp;lt;p&amp;gt;For example.&amp;lt;/p&amp;gt;</span><br><span class="line">&amp;lt;/blockquote&amp;gt;</span><br><span class="line">&lt;/code&gt;&lt;/pre&gt;</span><br></pre></td></tr></table></figure></p>
+<h4 id="反斜杠"><a href="#反斜杠" class="headerlink" title="反斜杠"></a>反斜杠</h4><p>Markdown 可以利用反斜杠来插入一些在语法中有其它意义的符号，例如：如果你想要用星号加在文字旁边的方式来做出强调效果（但不用\<em> 标签），你可以在星号的前面加上反斜杠：</em></p>
+<p><code>\*literal asterisks\*</code><br>Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：</p>
+<blockquote>
+<p>\   反斜线<br>`   反引号<br>*   星号<br>_   底线<br>{}  花括号<br>[]  方括号<br>()  括弧<br>#   井字号<br>+   加号<br>-   减号<br>.   英文句点<br>!   惊叹号</p>
+</blockquote>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/02/25/Markdown语法快速入门/" data-id="cjskayt99000058uud639vu7a" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/02/25/Markdown语法快速入门/" data-id="cjsluk6iv00000cuuwww0616v" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/技术/">技术</a></li></ul>
